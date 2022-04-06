@@ -8,36 +8,7 @@ namespace Practical_21
 {
     public sealed class Singleton
     {
-        //eager initialization of singleton
-
-        /* private static Singleton instance = new Singleton();
-           private Singleton() { }
-
-            public static Singleton GetInstance
-        {
-            get
-            {
-                return instance;
-            } 
-        }
-         */
-
-        //lazy initialization of singleton
-
-        /*  private static Singleton instance = null;
-          private Singleton() { }
-
-          public static Singleton GetInstance
-          {
-              get
-              {
-                  if (instance == null)
-                      instance = new Singleton();
-
-                  return instance;
-              }
-          }*/
-
+       
         //Thread-safe (Double-checked Locking) initialization of singleton
 
         private static Singleton instance = null;
